@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f8f9fa;
+    border: #f8f9fa;
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 75px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+.icon img {
+    margin-top: 5px;
+}
+
+.header div h1 {
+    color: #000000;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.header div img {
+    width: 50px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* name bar menu name */
+.header ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.header ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: hsl(44, 88%, 66%);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* icon */
+.icons-nav {
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+    color: #000;
+}
+
+.icons-nav i {
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.icons-nav i:hover {
+    color: hsl(44, 88%, 66%);
+    transform: scale(1.2);
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 20px;
+}
