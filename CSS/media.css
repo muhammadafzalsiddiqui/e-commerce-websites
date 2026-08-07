@@ -1,82 +1,340 @@
-@media (max-width: 800px) {
-    .header {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .icon {
-        order: 1;
-    }
+  .icon {
+    order: 1;
+  }
 
-    .icons-nav {
-        order: 2;
-        flex: 1;
-        justify-content: center;
-        gap: 40px;
-        margin-right: 0;
-    }
+  .icons-nav {
+    order: 3;
+    flex: 1;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 0;
+  }
 
-    .menu-toggle {
-        display: block;
-        order: 3;
-    }
+  .menu-toggle {
+    display: block;
+    order: 4;
+  }
 
-    .nav-links {
-        width: 100%;
-        display: none;
-        order: 4;
-    }
+  .nav-links {
+    width: 100%;
+    display: none; /* hidden by default */
+    order: 4;
+  }
 
-    .nav-links.active {
-        display: block;
-    }
+  .nav-links.active {
+    display: block; /* show when toggle active */
+  }
 
-    .header ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px 0;
-    }
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  /* navbar */
+  nav-bar {
+    position: relative;
+  }
+  .nav-bar img {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-bar-text {
+    position: absolute;
+    left: 50%;
+    top:30%;
+    width: 45%;
+    height:60%;
+    /* background-color: #135c0a; */
+  }
+  
+  .nav-bar-text h1 {
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 5px;
+
+  }
+  .nav-bar-text p {
+    font-size: 15px;
+  }
+
+  .nav-bar-text1 {
+    position: absolute;
+    width: 80%;
+    height: auto
+    /* height: 143px; */
+  }
+
+  .nav-bar-text h6 {
+    font-size: 15px;
+  }
+  .nav-bar-text button {
+    font-size: 12px;
+    width: 12vw;
+    height: 03vh;
+  }
+}
+
+/* Tablet & Mobile (1024px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .icon {
+    order: 1;
+  }
+
+  .icons-nav {
+    order: 3;
+    flex: 1;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 4;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none; /* hidden by default */
+    order: 4;
+  }
+
+  .nav-links.active {
+    display: block; /* show when toggle active */
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  /* navbar */
+  nav-bar {
+    position: relative;
+  }
+  .nav-bar img {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-bar-text {
+    position: absolute;
+    left: 60%;
+    top:30%;
+    width: 300px;
+    height: 243px;
+  }
+  .nav-bar-text h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .nav-bar-text p {
+    font-size: 10px;
+    /* background-color: #0a4d8f; */
+  }
+
+  .nav-bar-text1 {
+    position: absolute;
+    width: 250px;
+    height: 143px;
+  }
+
+  .nav-bar-text h6 {
+    font-size: 10px;
+  }
+  .nav-bar-text button {
+    font-size: 10px;
+    width: 13vw;
+    height: 3vh;
+  }
+}
+/* Large Mobile / Small Tablet */
+@media (max-width: 767px) and (min-width: 601px) {
+  /* Styles for big phones / phablets */
+
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .icon {
+    order: 1;
+  }
+
+  .icons-nav {
+    order: 3;
+    flex: 1;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 4;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none; /* hidden by default */
+    order: 4;
+  }
+
+  .nav-links.active {
+    display: block; /* show when toggle active */
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  /* navbar */
+  nav-bar {
+    position: relative;
+  }
+  .nav-bar img {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-bar-text {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    width: 255px;
+    height: 200px;
+  }
+  .nav-bar-text h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .nav-bar-text p {
+    font-size: 08px;
+
+  }
+
+  .nav-bar-text1 {
+    position: absolute;
+    width: 210px;
+    height: auto;
+    
+  }
+
+  .nav-bar-text h6 {
+    font-size: 08px;
+  }
+  .nav-bar-text button {
+    font-size: 10px;
+    width: 12vw;
+    height: 7vh;
+    margin-top: 20px;
+  }
 }
 
 
-@media (max-width: 700px) {
-    .header {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+/* Medium Mobile */
+@media (max-width: 600px)and (min-width: 100px) {
+  
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .icon {
-        order: 1;
-    }
+  .icon {
+    order: 1;
+    width: 20%;
+    /* background-color: #093158; */
+  }
+  .icon-text{
+    display: none;
+  }
 
-    .icons-nav {
-        order: 2;
-        flex: 1;
-        justify-content: center;
-        gap: 20px;
-        margin-right: 0;
-    }
 
-    .menu-toggle {
-        display: block;
-        order: 3;
-    }
+  .icons-nav {
+    order: 3;
+    flex: 1;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 0;
+  }
 
-    .nav-links {
-        width: 100%;
-        display: none;
-        order: 4;
-    }
+  .menu-toggle {
+    display: block;
+    order: 4;
+  }
 
-    .nav-links.active {
-        display: block;
-    }
+  .nav-links {
+    width: 100%;
+    display: none; /* hidden by default */
+    order: 4;
+  }
 
-    .header ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px 0;
-    }
+  .nav-links.active {
+    display: block; /* show when toggle active */
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  /* navbar */
+  n
+  .nav-bar img {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-bar-text {
+  /* background-color: #FFF3E3; */
+    position: static;
+    right: 50%;
+    top: 100%;
+    width: 100%;
+    height: 70%;
+    border:none;
+    background-color: none;
+    
+
+  }
+  .nav-bar-text h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .nav-bar-text p {
+    font-size: 08px;
+
+  }
+
+  .nav-bar-text1 {
+    margin: 20px 5px;
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .nav-bar-text h6 {
+    font-size: 08px;
+  }
+  .nav-bar-text button {
+    font-size: 10px;
+    width: 20vw;
+    height: 3vh;
+    margin-top: -10px;
+  }
 }
+
+
+
