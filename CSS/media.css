@@ -79,6 +79,21 @@
     width: 12vw;
     height: 03vh;
   }
+
+  /* range */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+  .card {
+    flex-direction: row;
+    margin: 20px;
+  }
+  .card-img {
+    width: 40%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+}
 }
 
 /* Tablet & Mobile (1024px) */
@@ -159,6 +174,24 @@
     width: 13vw;
     height: 3vh;
   }
+
+  /* range */
+
+  @media (max-width: 1023px) and (min-width: 768px) {
+  .card {
+    flex-direction: column;
+    margin: 15px;
+  }
+  .card-img {
+    width: 70%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .card-title {
+    font-size: 15px;
+  }
+}
+
 }
 /* Large Mobile / Small Tablet */
 @media (max-width: 767px) and (min-width: 601px) {
@@ -241,6 +274,21 @@
     width: 12vw;
     height: 7vh;
     margin-top: 20px;
+  }
+
+  /* range */
+
+    .card {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .card-img {
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .card-title {
+    font-size: 14px;
   }
 }
 
@@ -334,7 +382,57 @@
     height: 3vh;
     margin-top: -10px;
   }
+
+  /* range  */
+
+    .card {
+    flex-direction: column;
+    margin: 5px;
+  }
+  .card-img {
+    width: 95%;
+    height: auto;
+    margin: 5px auto;
+  }
+  .card-title {
+    font-size: 13px;
+  }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1279px) and (min-width: 1024px)  */
+/* @media (max-width: 1023px) and (min-width: 768px)  */
+/* @media (max-width: 767px) and (min-width: 601px)  */
+/* @media (max-width: 600px)and (min-width: 100px)  */
