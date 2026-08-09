@@ -398,12 +398,86 @@
     font-size: 13px;
   }
 }
+/* range */
+
+/* 🔹 Large tablets (1024px – 1279px) */
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .range-text h1 { font-size: 28px; }
+  .range-text p { font-size: 15px; }
+  .card-img { width: 40%; height: 60vh; }
+  .card-title { font-size: 16px; }
+}
+
+/* 🔹 Tablets (768px – 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .range-text h1 { font-size: 24px; }
+  .range-text p { font-size: 14px; }
+  .card { flex-wrap: wrap; margin: 10px 20px; }
+  .card-img { width: 45%; height: 50vh; }
+  .card-title { font-size: 15px; }
+}
+
+/* 🔹 Small tablets / large phones (601px – 767px) */
+@media (max-width: 767px) and (min-width: 601px) {
+  .range-text h1 { font-size: 22px; }
+  .range-text p { font-size: 13px; }
+  .card { flex-direction: column; margin: 10px; }
+  .card-img { width: 80%; height: 40vh; }
+  .card-title { font-size: 14px; }
+}
+
+/* 🔹 Mobile phones (100px – 600px) */
+@media (max-width: 600px) and (min-width: 100px) {
+  .range-text h1 { font-size: 20px; }
+  .range-text p { font-size: 12px; }
+  .card { flex-direction: column; margin: 5px; }
+  .card-img { width: 95%; height: 35vh; }
+  .card-title { font-size: 13px; }
+}
 
 
 
 
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
+/* Default (Desktop) → 4 cards per row */
+.our-product-imgg {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+}
 
+/* Large tablets (1024px – 1279px) → 3 cards per row */
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .our-product-imgg {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+/* Tablets (768px – 1023px) → 3 cards per row */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .our-product-imgg {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+/* Small tablets / large phones (601px – 767px) → 2 cards per row */
+@media (max-width: 767px) and (min-width: 601px) {
+  .our-product-imgg {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Mobile phones (100px – 600px) → 1 card per row */
+@media (max-width: 600px) and (min-width: 100px) {
+  .our-product-imgg {
+    flex: 1 1 100%;
+  }
+}
 
 
 
