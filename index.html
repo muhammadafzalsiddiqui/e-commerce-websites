@@ -24,9 +24,9 @@
             <h1 class="icon-text">Furniro</h1>
         </div>
 
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
 
         <div class="nav-links" id="navLinks">
             <ul>
@@ -45,19 +45,21 @@
         </div>
 
     </header>
-    <nav class="nav-bar">
+    <nav class="nav-bar" aria-label="Main hero">
 
-        <div><img src="./Assets/img/nav-bar.png" alt="">
-            <div class="nav-bar-text">
+        <div class="hero">
+            <img src="./Assets/img/nav-bar.png" alt="Living room set on hero background" class="hero-image">
+
+            <div class="nav-bar-text hero-content">
                 <div class="nav-bar-text1">
                     <h6>New Arrivals</h6>
-                    <h1>Discover Our  <br> New Collection</h1>
-                    <p class="texx">Discover the latest trends in furniture and home decor with our new collection. From modern
-                    designs to timeless classics, we have something for every style and taste.</p>
-                    <a href=""><button>BUY NOW</button></a>
+                    <h1>Discover Our<br>New Collection</h1>
+                    <p class="texx">Discover the latest trends in furniture and home decor with our new collection. From modern designs to timeless classics, we have something for every style and taste.</p>
+                    <div class="cta-wrap">
+                        <a href="#" class="btn-primary">BUY NOW</a>
+                    </div>
                 </div>
             </div>
-
         </div>
 
     </nav>
