@@ -2,187 +2,292 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/media.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <header class="header">
+  <header class="header">
 
-        <div class="icon">
-            <img src="./Assets/icons/logo.png" alt="logo">
-            <h1 class="icon-text">Furniro</h1>
-        </div>
-
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <div class="nav-links" id="navLinks">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </div>
-
-        <div class="icons-nav">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-
-    </header>
-    <nav class="nav-bar">
-
-        <div><img src="./Assets/img/nav-bar.png" alt="">
-            <div class="nav-bar-text">
-                <div class="nav-bar-text1">
-                    <h6>New Arrivals</h6>
-                    <h1>Discover Our  <br> New Collection</h1>
-                    <p class="texx">Discover the latest trends in furniture and home decor with our new collection. From modern
-                    designs to timeless classics, we have something for every style and taste.</p>
-                    <a href=""><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-        </div>
-
-    </nav>
-     <!-- range section -->
-       <div class="range">
-        <div class="range-text">
-            <h1>Browse The Range</h1>
-            <p>Discover the perfect furniture and budget-friendly options for your home.</p>
+    <div class="icon">
+      <img src="./Assets/icons/logo.png" alt="logo">
+      <h1 class="icon-text">Furniro</h1>
     </div>
 
-    
-<div class="card-grid">
-  <!-- Row 1: 2 images -->
-  <div class="card">
-    <div class="card-img">
-      <img src="./Assets/img/image 106.png" alt="Dining" class="default">
-      <img src="./Assets/img/image 81.png" alt="Dining Hover" class="hoverr">
-       <div class="card-title">Dining</div>
-    </div>
-    
-    <div class="card-img">
-      <img src="./Assets/img/image 100.png "alt="Dining" class="default">
-      <img src="./Assets/img/image 99.png"alt="Dining" class="hoverr">
-      <img src="./Assets/img/image 76.png" alt="Dining Hover" class="hoverr">
-       <div class="card-title">Living</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
     </div>
 
-    <div class="card-img">
-      <img src="./Assets/img/image 101 (1).png" alt="Dining" class="default">
-      <img src="./Assets/img/image 82.png" alt="Dining" class="hoverr">
-      <img src="./Assets/img/image 81.png" alt="Dining Hover" class="hoverr">
-       <div class="card-title">Bedroom</div>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icons-nav">
+      <i class="fa-regular fa-user"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+  </header>
+  <nav class="nav-bar">
+
+    <div><img src="./Assets/img/nav-bar.png" alt="">
+      <div class="nav-bar-text">
+        <div class="nav-bar-text1">
+          <h6>New Arrivals</h6>
+          <h1>Discover Our <br> New Collection</h1>
+          <p class="texx">Discover the latest trends in furniture and home decor with our new collection. From modern
+            designs to timeless classics, we have something for every style and taste.</p>
+          <a href=""><button>BUY NOW</button></a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+  <!-- range section -->
+  <div class="range">
+    <div class="range-text">
+      <h1>Browse The Range</h1>
+      <p>Discover the perfect furniture and budget-friendly options for your home.</p>
+    </div>
+
+
+    <div class="card-grid">
+      <!-- Row 1: 2 images -->
+      <div class="card">
+        <div class="card-img">
+          <img src="./Assets/img/image 106.png" alt="Dining" class="default">
+          <img src="./Assets/img/image 81.png" alt="Dining Hover" class="hoverr">
+          <div class="card-title">Dining</div>
+        </div>
+
+        <div class="card-img">
+          <img src="./Assets/img/image 100.png " alt="Dining" class="default">
+          <img src="./Assets/img/image 99.png" alt="Dining" class="hoverr">
+          <img src="./Assets/img/image 76.png" alt="Dining Hover" class="hoverr">
+          <div class="card-title">Living</div>
+        </div>
+
+        <div class="card-img">
+          <img src="./Assets/img/image 101 (1).png" alt="Dining" class="default">
+          <img src="./Assets/img/image 82.png" alt="Dining" class="hoverr">
+          <img src="./Assets/img/image 81.png" alt="Dining Hover" class="hoverr">
+          <div class="card-title">Bedroom</div>
+        </div>
+      </div>
+      <!-- our product  -->
+
+      <div class="our-product">
+        <div class="our-product-title">
+          <h2>Our Products</h1>
+        </div>
+        <div class="product-card">
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 1.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 2.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 3.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 4.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+          <div class="our-product-imgg">
+            <img src="./Assets/img/Image 5.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 6.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 7.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+          <div class="our-product-imgg">
+            <img src="./Assets/img/image 1.png" alt="">
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <h4>Rp 2.500.000</h4>
+            <button>Add to Cart</button>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- insperation -->
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>50+ Beautiful rooms inspiration</h1>
+    <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+    <a href="#" class="explore-btn">Explore More</a>
+  </div>
+
+  <div class="hero-right">
+    <div class="card card-main">
+      <img src="./Assets/img/image 1 (2).png" alt="Bed room inspiration">
+      <div class="card-overlay">
+        <div>
+          <div class="label">01 —— Bed Room</div>
+          <div class="title">Inner Peace</div>
+        </div>
+        <div class="overlay-arrow">&#8594;</div>
+      </div>
+    </div>
+
+    <div class="card card-secondary">
+      <img src="./Assets/img/Rectangle 25.png" alt="Dining room inspiration">
+      <div class="nav-arrow">&#8250;</div>
+      <div class="dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="card card-sliver">
+      <img src="./Assets/img/Rectangle 26.png" alt="Next room">
+    </div>
+
+    <div class="side-panel"></div>
+  </div>
+</section>
+
+<div class="section-outer">
+  <div class="funiro-wrap">
+    <div class="canvas">
+
+      <div class="header-block">
+        <div class="eyebrow">Share your setup with</div>
+        <div class="hashtag">#FuniroFurniture</div>
+      </div>
+
+      <img class="photo p-shelf"   src="./Assets/img/Rectangle 36.png" alt="Shelf with plants">
+      <img class="photo p-desk"    src="./Assets/img/Rectangle 38.png" alt="Desk with laptop and radio">
+      <img class="photo p-chair"   src="./Assets/img/Rectangle 40.png" alt="Vintage armchair">
+      <img class="photo p-stools"  src="./Assets/img/Rectangle 43.png" alt="Stools with plant">
+      <img class="photo p-dining"  src="./Assets/img/Rectangle 45.png" alt="Dining room corner">
+      <img class="photo p-bed"     src="./Assets/img/Rectangle 41.png" alt="Bed with tufted bench">
+      <img class="photo p-frame"   src="./Assets/img/Rectangle 38.png" alt="Frame decor">
+      <img class="photo p-kitchen" src="./Assets/img/Rectangle 45.png" alt="Kitchen rack">
+      <img class="photo p-outdoor" src="./Assets/img/Rectangle 43.png" alt="Outdoor dining table">
+
     </div>
   </div>
-   <!-- our product  -->
+</div>
 
-   <div class="our-product">
-    <div class="our-product-title">
-        <h2>Our Products</h1>
-    </div>
-    <div class="product-card">
-    <div class="our-product-imgg">
-        <img src="./Assets/img/image 1.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
 
-      <div class="our-product-imgg">
-        <img src="./Assets/img/image 2.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
 
-      <div class="our-product-imgg">
-        <img src="./Assets/img/image 3.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
-      <div class="our-product-imgg">
-        <img src="./Assets/img/image 4.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
-    
-   </div> 
 
-   <div class="product-card">
-    <div class="our-product-imgg">
-        <img src="./Assets/img/Image 5.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
+<div class="section-outer">
+  <div class="footer-wrap">
 
-      <div class="our-product-imgg">
-        <img src="./Assets/img/image 6.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
-
-      <div class="our-product-imgg">
-        <img src="./Assets/img/image 7.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
-      <div class="our-product-imgg">
-        <img src="./Assets/img/image 1.png" alt="">
-        <h3>Syltherine</h3>
-        <p>Stylish cafe chair</p>
-        <h4>Rp 2.500.000</h4> 
-          <button>Add to Cart</button>
-    </div>
-    
-   </div> 
-
-   
-   </div>
-   <!-- insperation -->
-     <div class="insp">
-        <div class="insp-text">
-            <h1>50+ beautiful rooms inspiration</h1>
-            <p>Our designer already made a lot of 
-              beautiful prototipe of rooms that inspire you</p>
-              <button>Explore me</button>
+    <div class="footer-row">
+      <div class="col-brand">
+        <div class="logo">Funiro.</div>
+        <div class="address">
+          400 University Drive Suite 200 Coral Gables,<br>
+          FL 33134 USA
         </div>
-        <div class="insp-img">
-          <img src="./Assets/img/" alt="">
-    
+      </div>
+
+      <div class="col-links">
+        <div class="col-label">Links</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-help">
+        <div class="col-label">Help</div>
+        <ul>
+          <li><a href="#">Payment Options</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policies</a></li>
+        </ul>
+      </div>
+
+      <div class="col-newsletter">
+        <div class="col-label">Newsletter</div>
+        <div class="newsletter-form">
+          <div class="newsletter-input-wrap">
+            <input type="email" placeholder="Enter Your Email Address">
+          </div>
+          <button class="subscribe-btn">SUBSCRIBE</button>
         </div>
-     </div>
- 
-    <script src="./js/script.js"></script>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="copyright">2023 furino. All rights reverved</div>
+
+  </div>
+</div>
+
+
+
+
+
+      <script src="./js/script.js"></script>
 </body>
 
 </html>
