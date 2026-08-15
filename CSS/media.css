@@ -599,6 +599,20 @@
   
 
 
+  /* Tablet: 768px - 1023px */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .navbar, .toolbar, .products { padding-left: 4%; padding-right: 4%; }
+  }
+
+  /* Mobile large: 601px - 767px */
+  @media (max-width: 767px) and (min-width: 601px) {
+    .navbar, .toolbar, .products { padding-left: 3%; padding-right: 3%; }
+  }
+
+  /* Mobile small: 100px - 600px */
+  @media (max-width: 600px) and (min-width: 100px) {
+    .navbar, .toolbar, .products { padding-left: 2.5%; padding-right: 2.5%; }
+  }
 
 
 

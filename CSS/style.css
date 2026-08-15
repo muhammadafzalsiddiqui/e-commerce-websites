@@ -757,5 +757,71 @@ style>
     font-size: 1.55cqw;
     color: #1e2430;
   }
+ /* shop */
+ /* nav-bar */
 
-  
+
+
+/* ============ HERO ============ */
+  .hero {
+    position: relative;
+    height: 16cqw;
+    min-height: 90px;
+    background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.55);
+  }
+  .hero-text { position: relative; text-align: center; }
+  .hero-text h1 { font-size: 2.6cqw; font-weight: 600; color: #1e2430; }
+  .hero-text .crumb { font-size: 0.85cqw; color: #1e2430; margin-top: 0.5%; }
+
+  /* ============ TOOLBAR ============ */
+  .toolbar {
+    background: #f9f1e7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1% 5.6%;
+    font-size: 0.95cqw;
+    color: #1e2430;
+  }
+  .toolbar-left { display: flex; align-items: center; gap: 1.4%; }
+  .toolbar-left .sep { width: 1px; height: 1.6cqw; background: #9f9f9f; }
+  .toolbar-left .crumb-muted { color: #6b7280; }
+  .toolbar-right { display: flex; align-items: center; gap: 1.4%; }
+  .toolbar-right .box {
+    background: #fff; border: none; padding: 0.5% 1.2%;
+    font-size: 0.95cqw; color: #1e2430; font-weight: 500;
+  }
+
+  /* ============ PAGINATION ============ */
+  .pagination {
+    display: flex; justify-content: center; gap: 1%;
+    padding: 0 0 3.5%;
+  }
+  .pagination button {
+    border: none; font-size: 0.95cqw; font-weight: 600;
+    width: 2.6cqw; height: 2.6cqw; min-width: 26px; min-height: 26px;
+    background: #f9f1e7; color: #1e2430; cursor: pointer;
+  }
+  .pagination button.active { background: #B88E2F; color: #fff; }
+  .pagination button.next { width: auto; padding: 0 1.4%; }
+
+  /* ============ FEATURES BAR ============ */
+  .features {
+    background: #f9f1e7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3% 8%;
+  }
+  .feature-item { display: flex; align-items: center; gap: 4%; }
+  .feature-item svg { width: 3cqw; min-width: 28px; height: auto; flex-shrink: 0; }
+  .feature-item h4 { font-size: 1.15cqw; font-weight: 600; color: #1e2430; }
+  .feature-item p { font-size: 0.85cqw; color: #898989; margin-top: 2%; }
