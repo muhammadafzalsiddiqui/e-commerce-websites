@@ -637,7 +637,7 @@ style>
   .p-kitchen { left: 67.84%; top: 62.37%; width: 15.09%; height: 20.88%; }
   .p-outdoor { left: 74.33%; top: 14.43%; width: 15.23%; height: 46.39%; }
 
-<style>
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
@@ -650,10 +650,7 @@ style>
     padding: 40px 40px;
   }
 
-  /* Everything inside scales together as ONE composition:
-     column widths are % (of this wrapper) and text sizes are cqw
-     (of this wrapper) — so the footer shrinks/grows as a whole and
-     never gets restructured at any width. */
+
   .footer-wrap {
     container-type: inline-size;
     container-name: footer;
@@ -761,8 +758,4 @@ style>
     color: #1e2430;
   }
 
-  /* ===================================================================
-     RESPONSIVE — same design, same relative layout at every width,
-     just outer breathing room adjusts.
-     =================================================================== */
-
+  
