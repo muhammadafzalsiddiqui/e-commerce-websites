@@ -126,9 +126,6 @@
   width: 561px;
   height: 344px;
   border: none;
-  /* background-color: #462b08; */
-
-  /* background-color: #a16b24; */
 }
 .nav-bar-text1 h6 {
   font-family: "Poppins", sans-serif;
@@ -163,7 +160,7 @@
   cursor: pointer;
 }
 
-/* range */
+/* <<<<<<<<<<<<<<<<<<<<<<<=============range==========================>>>>>>>>>*/
 
 .range-text h1 {
   font-family: "Poppins", sans-serif;
@@ -234,14 +231,14 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 6px 12px;
   border-radius: 5px;
-  z-index: 2; /* caption ko upar lane ke liye */
+  z-index: 2; 
 }
-/* our product */
+/* <<<<<<<<<<<<<=============================our product=============>>>>>>>>>>>>>>>*/
 .our-product-title {
   text-align: center;
   font-size: 40px;
   color: #686767;
-  /* background-color: #975f15; */
+
 }
 
 .product-card {
@@ -259,13 +256,14 @@
   width: 100%;
   border: 10px;
 }
-.our-product-imgg h3 {
+.our-product-imgg  h3 {
   font-size: 20px;
-  color: gray;
+  color: rgb(131, 17, 17);
 }
 .our-product-imgg h4 {
   font-size: 20px;
   color: gray;
+  text-decoration: none;
 }
 .our-product-imgg p {
   font-size: 15px;
@@ -276,9 +274,14 @@
   overflow: hidden;
   padding: 10px;
 }
+.our-product-imgg a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
 /* Hover background overlay */
-.our-product-imgg::before {
+.our-product-imgg img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -289,11 +292,14 @@
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 1;
+} a h3{
+  text-decoration: none;
 }
 
 .our-product-imgg:hover::before {
   opacity: 0.6; /* halki transparency */
 }
+
 
 /* Button style */
 .our-product-imgg button {
@@ -318,79 +324,192 @@
 .our-product-imgg:hover button {
   opacity: 1;
 }
-.insp {
-  display: flex;
-  flex-direction: column; /* text upar, images neeche */
-  align-items: center;
-  width: 95vw;
-  margin: 20px auto;
-}
 
-.insp-text {
-  width: 100%;
-  margin: 20px auto;
-  text-align: center;
-  background-color: #975f15;
-  color: #fff;
-  padding: 20px;
-}
+  .section-outer {
+    width: 100%;
+    padding: 0 40px;
+  }
 
-.insp-images-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  width: 100%;
-  margin-top: 20px;
-}
 
-.insp-img {
-  flex: 0 0 auto;
-  margin: 0 10px;
-  position: relative;
-}
+  .funiro-wrap {
+    container-type: inline-size;
+    container-name: funiro;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
 
-.insp-img img {
-  width: 220px;
-  height: auto;
-  border: 2px solid #777;
-}
+ 
+  .canvas {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 709 / 388;
+  }
 
-.arrow {
-  flex: 0 0 auto;
-  font-size: 22px;
-  background-color: #975f15;
-  padding: 10px;
-  border: 2px solid gray;
-  color: #fff;
-  margin-left: 10px;
-}
+  .header-block {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 
-.indicator {
-  margin: 15px auto;
-  width: 140px;
-  display: flex;
-  justify-content: space-around;
-}
+  .header-block .eyebrow {
+    font-size: 1.85cqw;
+    color: #6b7280;
+    margin-bottom: 0.6%;
+  }
 
-.step {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(128,128,128,0.4);
-}
-.step.active { background: brown; border: 1px solid yellow; }
-  
+  .header-block .hashtag {
+    font-size: 2.6cqw;
+    font-weight: 700;
+    color: #1e2430;
+  }
 
-style>
+  .photo {
+    position: absolute;
+    object-fit: cover;
+    display: block;
+  } 
+
+  /* ---- exact positions/sizes taken from the original design (in %) ---- */
+  .p-shelf   { left: 5.64%;  top: 12.89%; width: 4.66%;  height: 38.92%; }
+  .p-desk    { left: 11.00%; top: 20.36%; width: 26.38%; height: 33.25%; }
+  .p-chair   { left: 4.80%;  top: 55.15%; width: 11.99%; height: 34.54%; }
+  .p-stools  { left: 17.35%; top: 55.41%; width: 20.03%; height: 25.77%; }
+  .p-dining  { left: 38.36%; top: 29.38%; width: 17.21%; height: 42.01%; }
+  .p-bed     { left: 56.56%; top: 23.45%; width: 16.93%; height: 37.11%; }
+  .p-frame   { left: 56.56%; top: 62.37%; width: 10.30%; height: 25.77%; }
+  .p-kitchen { left: 67.84%; top: 62.37%; width: 15.09%; height: 20.88%; }
+  .p-outdoor { left: 74.33%; top: 14.43%; width: 15.23%; height: 46.39%; }
+
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f3ec;
+    background: #f2f2f2;
   }
+
+  .section-outer {
+    width: 100%;
+    padding: 40px 40px;
+  }
+
+
+  .footer-wrap {
+    container-type: inline-size;
+    container-name: footer;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 4.2% 6% 3.5%;
+  }
+
+  .footer-row {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* ---- column widths, taken from the original design ---- */
+  .col-brand     { width: 34.94%; }
+  .col-links     { width: 16.31%; }
+  .col-help      { width: 16.36%; }
+  .col-newsletter{ width: 32.39%; }
+
+  .logo {
+    font-size: 3.0cqw;
+    font-weight: 700;
+    color: #1e2430;
+    margin-bottom: 8.5%;
+  }
+
+  .address {
+    font-size: 1.55cqw;
+    line-height: 1.7;
+    color: #9f9f9f;
+    max-width: 80%;
+  }
+
+  .col-label {
+    font-size: 1.55cqw;
+    color: #9f9f9f;
+    margin-bottom: 13%;
+  }
+
+  .col-links ul,
+  .col-help ul {
+    list-style: none;
+  }
+
+  .col-links li,
+  .col-help li {
+    margin-bottom: 13%;
+  }
+
+  .col-links a,
+  .col-help a {
+    font-size: 1.7cqw;
+    font-weight: 700;
+    color: #1e2430;
+    text-decoration: none;
+  }
+
+  .newsletter-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 6%;
+  }
+
+  .newsletter-input-wrap {
+    flex: 1;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 8%;
+    font-size: 1.55cqw;
+    color: #6b7280;
+    font-family: inherit;
+    outline: none;
+    background: transparent;
+  }
+
+  .subscribe-btn {
+    border: none;
+    background: none;
+    font-size: 1.55cqw;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #1e2430;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+    padding-bottom: 2px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #ececec;
+    margin: 7% 0 4%;
+  }
+
+  .copyright {
+    font-size: 1.55cqw;
+    color: #1e2430;
+  }
+ /* shop */
+ /* nav-bar */
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<============ HERO ============>>>>>>>>>>>>>>>>>>> */
 
   .hero {
     display: flex;
@@ -568,219 +687,7 @@ style>
     flex-shrink: 0;
   }
 
-  
-
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #ffffff;
-  }
-
-  .section-outer {
-    width: 100%;
-    padding: 0 40px;
-  }
-
-
-  .funiro-wrap {
-    container-type: inline-size;
-    container-name: funiro;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-  }
-
  
-  .canvas {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 709 / 388;
-  }
-
-  .header-block {
-    position: absolute;
-    top: 3%;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .header-block .eyebrow {
-    font-size: 1.85cqw;
-    color: #6b7280;
-    margin-bottom: 0.6%;
-  }
-
-  .header-block .hashtag {
-    font-size: 2.6cqw;
-    font-weight: 700;
-    color: #1e2430;
-  }
-
-  .photo {
-    position: absolute;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* ---- exact positions/sizes taken from the original design (in %) ---- */
-  .p-shelf   { left: 5.64%;  top: 12.89%; width: 4.66%;  height: 38.92%; }
-  .p-desk    { left: 11.00%; top: 20.36%; width: 26.38%; height: 33.25%; }
-  .p-chair   { left: 4.80%;  top: 55.15%; width: 11.99%; height: 34.54%; }
-  .p-stools  { left: 17.35%; top: 55.41%; width: 20.03%; height: 25.77%; }
-  .p-dining  { left: 38.36%; top: 29.38%; width: 17.21%; height: 42.01%; }
-  .p-bed     { left: 56.56%; top: 23.45%; width: 16.93%; height: 37.11%; }
-  .p-frame   { left: 56.56%; top: 62.37%; width: 10.30%; height: 25.77%; }
-  .p-kitchen { left: 67.84%; top: 62.37%; width: 15.09%; height: 20.88%; }
-  .p-outdoor { left: 74.33%; top: 14.43%; width: 15.23%; height: 46.39%; }
-
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f2f2f2;
-  }
-
-  .section-outer {
-    width: 100%;
-    padding: 40px 40px;
-  }
-
-
-  .footer-wrap {
-    container-type: inline-size;
-    container-name: footer;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 4.2% 6% 3.5%;
-  }
-
-  .footer-row {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  /* ---- column widths, taken from the original design ---- */
-  .col-brand     { width: 34.94%; }
-  .col-links     { width: 16.31%; }
-  .col-help      { width: 16.36%; }
-  .col-newsletter{ width: 32.39%; }
-
-  .logo {
-    font-size: 3.0cqw;
-    font-weight: 700;
-    color: #1e2430;
-    margin-bottom: 8.5%;
-  }
-
-  .address {
-    font-size: 1.55cqw;
-    line-height: 1.7;
-    color: #9f9f9f;
-    max-width: 80%;
-  }
-
-  .col-label {
-    font-size: 1.55cqw;
-    color: #9f9f9f;
-    margin-bottom: 13%;
-  }
-
-  .col-links ul,
-  .col-help ul {
-    list-style: none;
-  }
-
-  .col-links li,
-  .col-help li {
-    margin-bottom: 13%;
-  }
-
-  .col-links a,
-  .col-help a {
-    font-size: 1.7cqw;
-    font-weight: 700;
-    color: #1e2430;
-    text-decoration: none;
-  }
-
-  .newsletter-form {
-    display: flex;
-    align-items: flex-end;
-    gap: 6%;
-  }
-
-  .newsletter-input-wrap {
-    flex: 1;
-  }
-
-  .newsletter-form input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #c9c9c9;
-    padding-bottom: 8%;
-    font-size: 1.55cqw;
-    color: #6b7280;
-    font-family: inherit;
-    outline: none;
-    background: transparent;
-  }
-
-  .subscribe-btn {
-    border: none;
-    background: none;
-    font-size: 1.55cqw;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: #1e2430;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    cursor: pointer;
-    white-space: nowrap;
-    font-family: inherit;
-    padding-bottom: 2px;
-  }
-
-  .divider {
-    border: none;
-    border-top: 1px solid #ececec;
-    margin: 7% 0 4%;
-  }
-
-  .copyright {
-    font-size: 1.55cqw;
-    color: #1e2430;
-  }
- /* shop */
- /* nav-bar */
-
-
-
-/* ============ HERO ============ */
-  .hero {
-    position: relative;
-    height: 16cqw;
-    min-height: 90px;
-    background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80') center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.55);
-  }
-  .hero-text { position: relative; text-align: center; }
-  .hero-text h1 { font-size: 2.6cqw; font-weight: 600; color: #1e2430; }
-  .hero-text .crumb { font-size: 0.85cqw; color: #1e2430; margin-top: 0.5%; }
 
   /* ============ TOOLBAR ============ */
   .toolbar {
@@ -825,3 +732,27 @@ style>
   .feature-item svg { width: 3cqw; min-width: 28px; height: auto; flex-shrink: 0; }
   .feature-item h4 { font-size: 1.15cqw; font-weight: 600; color: #1e2430; }
   .feature-item p { font-size: 0.85cqw; color: #898989; margin-top: 2%; }
+
+
+
+
+/* <<<<<<<<<<===========HERO 2 ======================>>>>>>>>>>>>>>> */
+
+.hero2 {
+    position: relative;
+    height: 16cqw;
+    min-height: 90px;
+    background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.55);
+  }
+  .hero2-text { position: relative; text-align: center; }
+  .hero2-text h1 { font-size: 2.6cqw; font-weight: 600; color: #1e2430; }
+  .hero2-text .crumb { font-size: 0.85cqw; color: #1e2430; margin-top: 0.5%; }
