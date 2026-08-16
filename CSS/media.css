@@ -615,6 +615,18 @@
   }
 
 
+ /* singal page  */
+
+ 
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .navbar, .breadcrumb, .product-detail, .tabs-section, .related-section { padding-left: 4%; padding-right: 4%; }
+  }
+  @media (max-width: 767px) and (min-width: 601px) {
+    .navbar, .breadcrumb, .product-detail, .tabs-section, .related-section { padding-left: 3%; padding-right: 3%; }
+  }
+  @media (max-width: 600px) and (min-width: 100px) {
+    .navbar, .breadcrumb, .product-detail, .tabs-section, .related-section { padding-left: 2.5%; padding-right: 2.5%; }
+  }
 
 
 
