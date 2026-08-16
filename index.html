@@ -41,7 +41,10 @@
       <i class="fa-regular fa-user"></i>
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-regular fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
+       <span class="cart-icon-wrap" id="cartToggle" role="button" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count-badge" id="cartCountBadge">2</span>
+      </span>
     </div>
 
   </header>
@@ -96,7 +99,7 @@
 
       <div class="our-product">
         <div class="our-product-title">
-          <h2>Our Products</h1>
+          <h2>Our Products</h2>
         </div>
         <div class="product-card">
           <div class="our-product-imgg">
@@ -140,47 +143,7 @@
 
         </div>
 
-         <div class="product-card">
-          <div class="our-product-imgg">
-            <img src="./Assets/img/image 1.png" alt="">
-            <a href="./single-produc.html">
-            <h3>Syltherine</h3>
-            <p>Stylish cafe chair</p>
-            <h4>Rp 2500.000</h4>
-            </a>
-            <button>Add to Cart</button>
-          </div>
-
-          <div class="our-product-imgg">
-            <img src="./Assets/img/image 2.png" alt="">
-        <a href="./single-produc.html">
-            <h3>Syltherine</h3>
-            <p>Stylish cafe chair</p>
-            <h4>Rp 2500.000</h4>
-            </a>
-            <button>Add to Cart</button>
-          </div>
-
-          <div class="our-product-imgg">
-            <img src="./Assets/img/image 3.png" alt="">
-           <a href="./single-produc.html">
-            <h3>Syltherine</h3>
-            <p>Stylish cafe chair</p>
-            <h4>Rp 2500.000</h4>
-            </a>
-            <button>Add to Cart</button>
-          </div>
-          <div class="our-product-imgg">
-            <img src="./Assets/img/image 4.png" alt="">
-           <a href="./single-produc.html">
-            <h3>Syltherine</h3>
-            <p>Stylish cafe chair</p>
-            <h4>Rp 2500.000</h4>
-            </a>
-            <button>Add to Cart</button>
-          </div>
-
-        </div>
+        
 
 
       </div>
@@ -193,7 +156,7 @@
   </div>
 
   <div class="hero-right">
-    <div class="card card-main">
+    <div class="hero-card hero-card-main">
       <img src="./Assets/img/image 1 (2).png" alt="Bed room inspiration">
       <div class="card-overlay">
         <div>
@@ -204,7 +167,7 @@
       </div>
     </div>
 
-    <div class="card card-secondary">
+    <div class="hero-card hero-card-secondary">
       <img src="./Assets/img/Rectangle 25.png" alt="Dining room inspiration">
       <div class="nav-arrow">&#8250;</div>
       <div class="dots">
@@ -215,7 +178,7 @@
       </div>
     </div>
 
-    <div class="card card-sliver">
+    <div class="hero-card hero-card-sliver">
       <img src="./Assets/img/Rectangle 26.png" alt="Next room">
     </div>
 
@@ -298,8 +261,53 @@
 
   </div>
 </div>
-<!-- home page done -->
-      <script src="./js/script.js"></script>
+
+<!-- CART OVERLAY & PANEL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3>Shopping Cart</h3>
+    <button class="cart-close" id="cartClose">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItemsWrap">
+    <div class="cart-item" data-price="2500000">
+      <div class="cart-item-img">
+        <img src="./Assets/img/image 1.png" alt="Syltherine">
+      </div>
+      <div class="cart-item-info">
+        <h4>Syltherine</h4>
+        <div class="line">1 x <b>Rp 2.500.000</b></div>
+      </div>
+      <button class="cart-item-remove">&times;</button>
+    </div>
+
+    <div class="cart-item" data-price="2500000">
+      <div class="cart-item-img">
+        <img src="./Assets/img/image 2.png" alt="Leviosa">
+      </div>
+      <div class="cart-item-info">
+        <h4>Leviosa</h4>
+        <div class="line">1 x <b>Rp 2.500.000</b></div>
+      </div>
+      <button class="cart-item-remove">&times;</button>
+    </div>
+  </div>
+
+  <div class="cart-empty" id="cartEmpty">Your cart is empty</div>
+
+  <div class="cart-subtotal" id="cartSubtotal">
+    <span>Subtotal</span>
+    <b id="cartSubtotalValue">Rp 5.000.000</b>
+  </div>
+
+  <div class="cart-actions">
+    <button>Cart</button>
+    <button>Checkout</button>
+    <button>Comparison</button>
+  </div>
+</aside>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
