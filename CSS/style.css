@@ -275,7 +275,6 @@ body {
   color: #686767;
 }
 
-/* Row wrapper for 4 product tiles */
 .product-card {
   width: 95%;
   display: flex;
@@ -285,9 +284,6 @@ body {
 }
 
 .our-product-imgg {
-  position: relative;
-  overflow: hidden;
-  padding: 10px;
   width: 25%;
   height: auto;
 }
