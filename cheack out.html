@@ -11,14 +11,12 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./CSS/cart.css">
+  <link rel="stylesheet" href="./CSS/cheackout.css">
   <link rel="stylesheet" href="./CSS/media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-  
-  <div class="page">
 
   <header class="header">
 
@@ -33,7 +31,7 @@
 
     <div class="nav-links" id="navLinks">
       <ul>
-        <li><a href="./index.html">home</a></li>
+        <li><a href="#">home</a></li>
         <li><a href="shop.html">shop</a></li>
         <li><a href="#">About</a></li>
         <li><a href="./contact.html">contact</a></li>
@@ -51,98 +49,142 @@
     </div>
 
   </header>
-
-  <section class="hero">
-  <img class="hero-bg" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1400&q=80" alt="hero background">
-  <div class="hero-content">
-    <span class="mark"></span>
-    <h1>Cart</h1>
-    <p class="crumb">Home <span>&gt;</span> Cart</p>
-  </div>
-</section>
-
-<main>
-  <div class="cart-grid">
-    <table class="cart-table">
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <div class="product-cell">
-              <div class="thumb">
-                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=200&q=80" alt="Asgaard sofa">
-              </div>
-              <span class="pname">Asgaard sofa</span>
-            </div>
-          </td>
-          <td class="price">Rs. 250,000.00</td>
-          <td><input class="qty-box" type="number" value="1" min="1"></td>
-          <td class="subtotal">Rs. 250,000.00</td>
-          <td>
-            <svg class="remove-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <aside class="cart-totals">
-      <h3>Cart Totals</h3>
-      <div class="totals-row">
-        <span class="label">Subtotal</span>
-        <span class="value">Rs. 250,000.00</span>
-      </div>
-      <div class="totals-row">
-        <span class="label">Total</span>
-        <span class="value total">Rs. 250,000.00</span>
-      </div>
-      <a href="./cheack out.html"><button class="checkout-btn">Check Out</button></a>
-    </aside>
-  </div>
-</main>
-
-<section class="features">
-  <div class="features-inner">
-    <div class="feature">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 2l2.4 6.6L21 9l-5 4.4L17.4 21 12 17l-5.4 4L8 13.4 3 9l6.6-.4z"/></svg>
-      <div>
-        <h4>High Quality</h4>
-        <p>crafted from top materials</p>
-      </div>
+  <!-- HERO -->
+  <section class="hero2">
+    <div class="hero2-text">
+      <div class="hero2-logo">&#9650;</div>
+      <h1>Checkout</h1>
+      <div class="crumb">Home &gt; Checkout</div>
     </div>
-    <div class="feature">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 2l8 3v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V5z"/><path d="M9 12l2 2 4-4"/></svg>
-      <div>
-        <h4>Warranty Protection</h4>
-        <p>over 2 years</p>
-      </div>
-    </div>
-    <div class="feature">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="1" y="6" width="14" height="11" rx="1"/><path d="M15 9h4l3 3v5h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
-      <div>
-        <h4>Free Shipping</h4>
-        <p>order over Rs. 15,000</p>
-      </div>
-    </div>
-    <div class="feature">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M18 3a9 9 0 0 1 0 18M6 3a9 9 0 0 0 0 18"/><path d="M3 12h4M17 12h4"/></svg>
-      <div>
-        <h4>24/7 Support</h4>
-        <p>dedicated support</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
+  <!-- CHECKOUT -->
+  <section class="checkout-section">
+    <div class="checkout-grid">
 
+      <!-- BILLING DETAILS -->
+      <div class="billing-details">
+        <h2>Billing details</h2>
 
-  <div class="section-outer">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Company Name (Optional)</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Country / Region</label>
+          <select>
+            <option>Sri Lanka</option>
+            <option>Pakistan</option>
+            <option>India</option>
+            <option>United States</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Street address</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Town / City</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Province</label>
+          <select>
+            <option>Western Province</option>
+            <option>Central Province</option>
+            <option>Southern Province</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>ZIP code</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="additional-info" placeholder="Additional information">
+        </div>
+      </div>
+
+      <!-- ORDER SUMMARY -->
+      <div class="order-summary">
+        <div class="order-row order-head">
+          <span>Product</span>
+          <span>Subtotal</span>
+        </div>
+
+        <div class="order-row">
+          <span class="muted">Asgaard sofa <b>x 1</b></span>
+          <span class="muted">Rs. 250,000.00</span>
+        </div>
+
+        <div class="order-row">
+          <span>Subtotal</span>
+          <span>Rs. 250,000.00</span>
+        </div>
+
+        <div class="order-row">
+          <span>Total</span>
+          <span class="total-price">Rs. 250,000.00</span>
+        </div>
+
+        <div class="payment-options">
+          <label class="radio-row">
+            <input type="radio" name="payment" checked>
+            <span>Direct Bank Transfer</span>
+          </label>
+          <p class="payment-note">
+            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+          </p>
+
+          <label class="radio-row">
+            <input type="radio" name="payment">
+            <span>Direct Bank Transfer</span>
+          </label>
+
+          <label class="radio-row">
+            <input type="radio" name="payment">
+            <span>Cash On Delivery</span>
+          </label>
+        </div>
+
+        <p class="policy-note">
+          Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.
+        </p>
+
+        <button class="place-order-btn">Place order</button>
+      </div>
+
+    </div>
+  </section>
+
+  
+<div class="section-outer">
   <div class="footer-wrap">
     <div class="footer-row">
       <div class="col-brand">
@@ -156,8 +198,8 @@
       <div class="col-links">
         <div class="col-label">Links</div>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -189,7 +231,9 @@
 
   </div>
 </div>
-</div>
+
+
+
 <!-- CART OVERLAY & PANEL -->
 <div class="cart-overlay" id="cartOverlay"></div>
 <aside class="cart-panel" id="cartPanel">
@@ -237,4 +281,5 @@
 </aside>
 <script src="./js/script.js"></script>
 </body>
+
 </html>
