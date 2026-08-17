@@ -10,12 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/sing.css">
   <link rel="stylesheet" href="./CSS/media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+
 
   <header class="header">
 
@@ -31,7 +32,7 @@
     <div class="nav-links" id="navLinks">
       <ul>
         <li><a href="./index.html">home</a></li>
-        <li><a href="./shop.html">shop</a></li>
+        <li><a href="shop.html">shop</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">contact</a></li>
       </ul>
@@ -41,7 +42,10 @@
       <i class="fa-regular fa-user"></i>
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-regular fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
+       <span class="cart-icon-wrap" id="cartToggle" role="button" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count-badge" id="cartCountBadge">2</span>
+      </span>
     </div>
 
   </header>
@@ -94,8 +98,8 @@
 
       <div class="buy-row">
         <div class="qty"><button>-</button><span>1</span><button>+</button></div>
-        <button class="btn-add">Add To Cart</button>
-        <button class="btn-compare">&#8596; Compare</button>
+        <a href="./cart.html"><button class="btn-add">Add To Cart</button></a>
+        <a href="./comparison.html"><button class="btn-compare">&#8596; Compare</button></a>
       </div>
 
       <hr class="divider">
@@ -215,6 +219,51 @@
     <hr class="footer-divider">
     <div class="copyright">2023 furino. All rights reverved</div>
   </footer>
+  <!-- CART OVERLAY & PANEL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3>Shopping Cart</h3>
+    <button class="cart-close" id="cartClose">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItemsWrap">
+    <div class="cart-item" data-price="2500000">
+      <div class="cart-item-img">
+        <img src="./Assets/img/image 1.png" alt="Syltherine">
+      </div>
+      <div class="cart-item-info">
+        <h4>Syltherine</h4>
+        <div class="line">1 x <b>Rp 2.500.000</b></div>
+      </div>
+      <button class="cart-item-remove">&times;</button>
+    </div>
+
+    <div class="cart-item" data-price="2500000">
+      <div class="cart-item-img">
+        <img src="./Assets/img/image 2.png" alt="Leviosa">
+      </div>
+      <div class="cart-item-info">
+        <h4>Leviosa</h4>
+        <div class="line">1 x <b>Rp 2.500.000</b></div>
+      </div>
+      <button class="cart-item-remove">&times;</button>
+    </div>
+  </div>
+
+  <div class="cart-empty" id="cartEmpty">Your cart is empty</div>
+
+  <div class="cart-subtotal" id="cartSubtotal">
+    <span>Subtotal</span>
+    <b id="cartSubtotalValue">Rp 5.000.000</b>
+  </div>
+
+  <div class="cart-actions">
+    <button>Cart</button>
+    <button>Checkout</button>
+    <button>Comparison</button>
+  </div>
+</aside>
     
       <script src="./js/script.js"></script>
 </body>

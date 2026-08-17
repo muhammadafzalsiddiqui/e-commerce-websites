@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/comp.css">
+  <link rel="stylesheet" href="./CSS/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  
+  <div class="page">
+
+  <header class="header">
+
+    <div class="icon">
+      <img src="./Assets/icons/logo.png" alt="logo">
+      <h1 class="icon-text">Furniro</h1>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icons-nav">
+      <i class="fa-regular fa-user"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-regular fa-heart"></i>
+       <span class="cart-icon-wrap" id="cartToggle" role="button" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count-badge" id="cartCountBadge">2</span>
+      </span>
+    </div>
+
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero2">
+    <div class="hero2-text">
+      <h1>Product Comparison</h1>
+      <div class="crumb">
+        <span>Home</span>
+        <span class="sep">&gt;</span>
+        <span class="muted">Comparison</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON CONTENT -->
+  <div class="comparison-wrap">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="side-col">
+      <div class="side-block">
+        <h4>Go to Product page for more Products</h4>
+        <a href="shop.html" class="view-more">View More</a>
+      </div>
+      <div class="side-block">
+        <h4>Add A Product</h4>
+        <button class="add-product-btn">
+          Choose a Product <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- COMPARISON TABLE -->
+    <div class="table-col">
+
+      <!-- PRODUCT HEADERS -->
+      <div class="product-header-row">
+        <div class="product-head-card">
+          <div class="product-head-img">
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=300&q=80" alt="Asgaard Sofa">
+          </div>
+          <h3>Asgaard Sofa</h3>
+          <div class="price">Rs. 350,000.00</div>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="muted">(31 Review)</span>
+          </div>
+        </div>
+        <div class="product-head-card">
+          <div class="product-head-img">
+            <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=300&q=80" alt="Outdoor Sofa Set">
+          </div>
+          <h3>Outdoor Sofa Set</h3>
+          <div class="price">Rs. 324,000.00</div>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="muted">(19 Review)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLE -->
+      <div class="compare-table">
+
+        <div class="compare-section-title">General</div>
+
+        <div class="compare-row">
+          <div class="label">Sales Package</div>
+          <div class="val">1 sectional sofa</div>
+          <div class="val">1 Three Seater, 2 Single Seater</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Model Number</div>
+          <div class="val">TFCBLOM95.60RHS</div>
+          <div class="val">DTUBLOM95.569</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Secondary Material</div>
+          <div class="val">Solid Wood</div>
+          <div class="val">Solid Wood</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Configuration</div>
+          <div class="val">L-shaped</div>
+          <div class="val">L-shaped</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Upholstery Material</div>
+          <div class="val">Fabric + Cotton</div>
+          <div class="val">Fabric + Cotton</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Upholstery Color</div>
+          <div class="val">Bright Grey &amp; Lion</div>
+          <div class="val">Bright Grey &amp; Lion</div>
+        </div>
+
+        <div class="compare-section-title">Product</div>
+
+        <div class="compare-row">
+          <div class="label">Filling Material</div>
+          <div class="val">Foam</div>
+          <div class="val">Matte</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Finish Type</div>
+          <div class="val">Bright Grey &amp; Lion</div>
+          <div class="val">Bright Grey &amp; Lion</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Adjustable Headrest</div>
+          <div class="val">No</div>
+          <div class="val">yes</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Maximum Load Capacity</div>
+          <div class="val">280 KG</div>
+          <div class="val">280 KG</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Origin of Manufacture</div>
+          <div class="val">India</div>
+          <div class="val">India</div>
+        </div>
+
+        <div class="compare-section-title">Dimensions</div>
+
+        <div class="compare-row">
+          <div class="label">Width</div>
+          <div class="val">285.32 cm</div>
+          <div class="val">285.32 cm</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Height</div>
+          <div class="val">76 cm</div>
+          <div class="val">76 cm</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Depth</div>
+          <div class="val">167.76 cm</div>
+          <div class="val">167.76 cm</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Weight</div>
+          <div class="val">45 KG</div>
+          <div class="val">65 KG</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Seat Height</div>
+          <div class="val">41.52 cm</div>
+          <div class="val">41.52 cm</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Leg Height</div>
+          <div class="val">5.46 cm</div>
+          <div class="val">5.46 cm</div>
+        </div>
+
+        <div class="compare-section-title">Warranty</div>
+
+        <div class="compare-row">
+          <div class="label">Warranty Summary</div>
+          <div class="val">1 Year Manufacturing Warranty</div>
+          <div class="val">12 Year Manufacturing Warranty</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Warranty Service Type</div>
+          <div class="val">For Warranty Claims or Any Product Related Issues Please email at operations@furnitu.com</div>
+          <div class="val">For Warranty Claims or Any Product Related Issues Please email at support@furnitu.com</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Covered in Warranty</div>
+          <div class="val">Warranty Against Manufacturing Defect</div>
+          <div class="val">Warranty of the product is limited to manufacturing defects only</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Not Covered in Warranty</div>
+          <div class="val">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear &amp; Tear In The Natural Course Of Product Usage.</div>
+          <div class="val">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear &amp; Tear In The Natural Course Of Product Usage.</div>
+        </div>
+        <div class="compare-row">
+          <div class="label">Domestic Warranty</div>
+          <div class="val">1 Year</div>
+          <div class="val">3 Months</div>
+        </div>
+
+        <div class="add-to-cart-row">
+          <div class="spacer"></div>
+          <button class="btn-add-cart">Add To Cart</button>
+          <button class="btn-add-cart">Add To Cart</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+<div class="section-outer">
+  <div class="footer-wrap">
+    <div class="footer-row">
+      <div class="col-brand">
+        <div class="logo">Funiro.</div>
+        <div class="address">
+          400 University Drive Suite 200 Coral Gables,<br>
+          FL 33134 USA
+        </div>
+      </div>
+
+      <div class="col-links">
+        <div class="col-label">Links</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-help">
+        <div class="col-label">Help</div>
+        <ul>
+          <li><a href="#">Payment Options</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policies</a></li>
+        </ul>
+      </div>
+
+      <div class="col-newsletter">
+        <div class="col-label">Newsletter</div>
+        <div class="newsletter-form">
+          <div class="newsletter-input-wrap">
+            <input type="email" placeholder="Enter Your Email Address">
+          </div>
+          <button class="subscribe-btn">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="copyright">2023 furino. All rights reverved</div>
+
+  </div>
+</div>
+</div>
+<!-- CART OVERLAY & PANEL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3>Shopping Cart</h3>
+    <button class="cart-close" id="cartClose">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItemsWrap">
+    <div class="cart-item" data-price="2500000">
+      <div class="cart-item-img">
+        <img src="./Assets/img/image 1.png" alt="Syltherine">
+      </div>
+      <div class="cart-item-info">
+        <h4>Syltherine</h4>
+        <div class="line">1 x <b>Rp 2.500.000</b></div>
+      </div>
+      <button class="cart-item-remove">&times;</button>
+    </div>
+
+    <div class="cart-item" data-price="2500000">
+      <div class="cart-item-img">
+        <img src="./Assets/img/image 2.png" alt="Leviosa">
+      </div>
+      <div class="cart-item-info">
+        <h4>Leviosa</h4>
+        <div class="line">1 x <b>Rp 2.500.000</b></div>
+      </div>
+      <button class="cart-item-remove">&times;</button>
+    </div>
+  </div>
+
+  <div class="cart-empty" id="cartEmpty">Your cart is empty</div>
+
+  <div class="cart-subtotal" id="cartSubtotal">
+    <span>Subtotal</span>
+    <b id="cartSubtotalValue">Rp 5.000.000</b>
+  </div>
+
+  <div class="cart-actions">
+    <button>Cart</button>
+    <button>Checkout</button>
+    <button>Comparison</button>
+  </div>
+</aside>
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -753,6 +753,46 @@
   
 
 
+/* ============================================================
+   PRODUCT COMPARISON PAGE — RESPONSIVE
+   ============================================================ */
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .compare-wrap { padding: 30px 16px 60px; }
+  .compare-hero-text h1 { font-size: 24px; }
+  .compare-table td { font-size: 12px; padding: 12px 10px; }
+  .compare-product-card h3 { font-size: 15px; }
+}
+
+/* Large mobile: 601px - 767px */
+@media (max-width: 767px) and (min-width: 601px) {
+  .compare-top { flex-direction: column; }
+  .compare-side { width: 100%; }
+  .compare-products { flex-wrap: wrap; }
+  .compare-table td { font-size: 12px; padding: 10px 8px; }
+  .compare-hero-text h1 { font-size: 22px; }
+}
+
+/* Mobile: up to 600px */
+@media (max-width: 600px) and (min-width: 100px) {
+  .compare-wrap { padding: 20px 12px 50px; }
+  .compare-top { flex-direction: column; gap: 20px; }
+  .compare-side { width: 100%; }
+  .compare-products { flex-direction: column; }
+  .compare-add { min-width: 100%; padding: 20px 12px; }
+
+  .compare-hero-text h1 { font-size: 20px; }
+  .compare-hero-text .crumb { font-size: 11px; }
+
+  .compare-table td { font-size: 11px; padding: 8px 6px; }
+  .compare-table td:first-child { width: 40%; }
+  .compare-section-title { font-size: 13px; }
+  .compare-warranty-title { font-size: 18px; }
+  .compare-addcart-row .btn-addcart { padding: 8px 16px; font-size: 12px; }
+}
+
+
 
 
 
