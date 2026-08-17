@@ -4,14 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Furniro</title>
+<link rel="icon" type="image/x-icon" href="./Assets/icons/files/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="./Assets/icons/files/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./Assets/icons/files/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./Assets/icons/files/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./Assets/icons/files/android-chrome-512x512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./CSS/cheackout.css">
+  <link rel="stylesheet" href="./CSS/contact.css">
   <link rel="stylesheet" href="./CSS/media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -33,7 +38,7 @@
       <ul>
         <li><a href="./index.html">home</a></li>
         <li><a href="shop.html">shop</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="./about.html">About</a></li>
         <li><a href="#">contact</a></li>
       </ul>
     </div>
@@ -57,6 +62,75 @@
       <div class="crumb">Home &gt; Contact</div>
     </div>
   </section>
+  <div class="contact-wrapper">
+
+  <div class="contact-header">
+    <h2>Get In Touch With Us</h2>
+    <p>For More Information About Our Product &amp; Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate.</p>
+  </div>
+
+  <div class="contact-body">
+
+    <!-- ================= LEFT: INFO ================= -->
+    <div class="contact-info">
+
+      <div class="info-item">
+        <div class="icon">&#128205;</div>
+        <div>
+          <h4>Address</h4>
+          <p>236 5th SE Avenue, New York NY10080, United States</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon">&#128222;</div>
+        <div>
+          <h4>Phone</h4>
+          <p>Mobile: +(84) 546-6789<br>Hotline: +(84) 456-6789</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon">&#128337;</div>
+        <div>
+          <h4>Working Time</h4>
+          <p>Monday-Friday: 9:00 - 22:00<br>Saturday-Sunday: 9:00 - 21:00</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= RIGHT: FORM ================= -->
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <label for="cf-name">Your name</label>
+          <input type="text" id="cf-name" placeholder="Abc">
+        </div>
+
+        <div class="form-group">
+          <label for="cf-email">Email address</label>
+          <input type="email" id="cf-email" placeholder="Abc@def.com">
+        </div>
+
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" placeholder="This is optional">
+        </div>
+
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" placeholder="Hi! I'd like to ask about"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
 
   
 <div class="section-outer">
@@ -82,10 +156,11 @@
 
       <div class="col-help">
         <div class="col-label">Help</div>
-        <ul>
-          <li><a href="#">Payment Options</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Privacy Policies</a></li>
+         <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
 
@@ -147,11 +222,10 @@
     <span>Subtotal</span>
     <b id="cartSubtotalValue">Rp 5.000.000</b>
   </div>
-
-  <div class="cart-actions">
-    <button>Cart</button>
-    <button>Checkout</button>
-    <button>Comparison</button>
+ <div class="cart-actions">
+    <a href="./cart.html"><button>Cart</button></a>
+    <a href="./cheack out.html"><button>Checkout</button></a>
+   <a href="./comparison.html"><button>Comparison</button></a> 
   </div>
 </aside>
 <script src="./js/script.js"></script>
